@@ -1,1 +1,1 @@
-worker python manage.py runserver teloxy.herocuapp.com
+worker: python manage.py runserver teloxy.herocuapp.com
