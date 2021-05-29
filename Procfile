@@ -1,1 +1,1 @@
-web: gunicorn teloxy.wsgi --log-file
+web: gunicorn teloxy.wsgi
