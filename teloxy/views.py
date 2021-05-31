@@ -6,6 +6,8 @@ def test(req):
     try:
         if req.GET['pass'] == 'mmdlov3':
             res = 'nice job!'
+        else:
+            res = 'nope!'
     except:
         res = 'nope!'
     return HttpResponse(res)
