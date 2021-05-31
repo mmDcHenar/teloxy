@@ -10,7 +10,7 @@ def test(req):
             res = 'nope!'
     except:
         res = 'nope!'
-    return HttpResponse(res+'\n'+str(req.META['REMOTE_USER']))
+    return HttpResponse(res)
 
 def home(req):
     cli = Tc('cli', 1029913, 'c89b062fb1b8ef18bc24a1e0c893f2ec').start() # , proxy=('socks5', '127.0.0.1', 9050))
