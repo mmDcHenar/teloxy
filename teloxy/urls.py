@@ -18,7 +18,7 @@ from django.urls import path
 from teloxy import views
 
 urlpatterns = [
-    path('test/', views.test)
+    path('test/', views.test),
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
 ]
