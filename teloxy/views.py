@@ -1,6 +1,9 @@
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from telethon.sync import TelegramClient as Tc
 from re import findall
+
+def test(req):
+    return HttpResponse(str(req.POST))
 
 def home(req):
     cli = Tc('cli', 1029913, 'c89b062fb1b8ef18bc24a1e0c893f2ec').start() # , proxy=('socks5', '127.0.0.1', 9050))
