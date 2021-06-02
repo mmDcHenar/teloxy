@@ -18,6 +18,7 @@ from django.urls import path
 from teloxy import views
 
 urlpatterns = [
+    path('', views.home),
     path('test/', views.test),
     path('download/', views.download),
     path('admin/', admin.site.urls),

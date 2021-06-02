@@ -5,6 +5,9 @@ from re import findall
 def test(req):
     return HttpResponse('test!')
 
+def home(req):
+    return HttpResponse('Hello World!')
+
 
 def download(req):
     android = {'Current_version': '0.7.1',
