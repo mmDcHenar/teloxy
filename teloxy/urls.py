@@ -19,6 +19,7 @@ from teloxy import views
 
 urlpatterns = [
     path('test/', views.test),
+    path('download/', views.download),
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('proxy/', views.proxy),
 ]
