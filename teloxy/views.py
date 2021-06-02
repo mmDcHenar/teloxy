@@ -11,7 +11,7 @@ def home(req):
 
 def download(req):
     android = {'Current_version': '1.0',
-               'Info': 'bugs fixed',
+               'Info': 'Released!',
                'Download_link': 'http://rozup.ir/download/3357262/Teloxy-1.0-armeabi-v7a-release-unsigned.apk',
                'Telegram_link': 'tg://resolve?domain=teloxy_app&post=4'}
 
