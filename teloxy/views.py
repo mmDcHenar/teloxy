@@ -12,10 +12,10 @@ def home(req):
 def download(req):
     android = {'Current_version': '0.7.1',
                'Download_link': 'https://teloxy.herokuapp.com/test/',
-               'Telegram_link': 't.me/teloxy_app/2'}
+               'Telegram_link': 'tg://resolve?domain=teloxy_app&post=2'}
     ios = {'Current_version': '0.7.1',
                'Download_link': 'https://teloxy.herokuapp.com/test/',
-               'Telegram_link': 't.me/teloxy_app/2'}
+               'Telegram_link': 'tg://resolve?domain=teloxy_app&post=2'}
     return JsonResponse({'android': android, 'IOS': ios})
 
 
