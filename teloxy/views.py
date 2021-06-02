@@ -12,8 +12,9 @@ def home(req):
 def download(req):
     android = {'Current_version': '0.7.1',
                'Info': 'bugs fixed',
-               'Download_link': 'https://teloxy.herokuapp.com/test/',
-               'Telegram_link': 'tg://resolve?domain=teloxy_app&post=2'}
+               'Download_link': 'http://rozup.ir/download/3357232/Teloxy-0.7.1-armeabi-v7a-debug.apk',
+               'Telegram_link': 'tg://resolve?domain=teloxy_app&post=3'}
+    
     ios = {'Current_version': '0.7.1',
            'Info': 'bug fixed',
            'Download_link': 'https://teloxy.herokuapp.com/test/',
