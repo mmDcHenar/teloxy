@@ -31,7 +31,7 @@ def proxy(req):
         for msg in channel:
             proxies = findall("(?:\s|\n|)((?:https://t\.me/|tg://)proxy\?server=.+?&port=\d+?&secret=.+)(?:\s|\n|)", msg.text)
             for proxy in proxies:
-                if proxy not in result.itervalues():
+                if proxy not in list(result.values()):
                     result[str(counter)] = proxy
                     counter += 1
     cli.disconnect()
