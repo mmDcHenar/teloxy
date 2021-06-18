@@ -4,3 +4,4 @@ django_heroku
 telethon
 bs4
 lxml
+requests
