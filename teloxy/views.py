@@ -34,7 +34,22 @@ def proxy(req):
 		except:
 			pass
 
-	channels = [hack_proxy]
+
+	url = "https://t.me/s/ProxyMTProto/"
+	channel = get(url).text
+	soup = BeautifulSoup(channel, 'lxml')
+	tgpost = soup.find_all('div', class_ ='tgme_widget_message')
+	ProxyMTProto = []
+
+	for content in tgpost:
+		msg = content.find('a', class_ = "tgme_widget_message_inline_button")
+		try:
+			ProxyMTProto.append(msg['href'])
+		except:
+			pass
+
+
+	channels = [hack_proxy, ProxyMTProto]
 	result = {}
 	counter = 0
 
