@@ -35,6 +35,7 @@ def proxy(req):
 			pass
 
 	channels = [hack_proxy]
+	result = {}
 
 	for channel in channels:
 		for msg in channel:
