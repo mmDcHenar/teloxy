@@ -30,7 +30,7 @@ def proxy(req):
 	for content in tgpost:
 		msg = content.find('div', class_ = 'tgme_widget_message_text')
 		try:
-			msgs.append(msg.text)
+			hack_proxy.append(msg.text)
 		except:
 			pass
 
