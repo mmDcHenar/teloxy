@@ -22,7 +22,7 @@ def download(req):
 
 def proxy(req):
 	url = "https://t.me/s/hack_proxy/"
-	channel = requests.get(url).text
+	channel = get(url).text
 	soup = BeautifulSoup(channel, 'lxml')
 	tgpost = soup.find_all('div', class_ ='tgme_widget_message')
 	hack_proxy = []
